@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family:"Quicksand", sans-serif ;
+}
+/*header star*/
+ul{
+    list-style: none ;
+}
+a{text-decoration: none;
+
+}
+/*utility classes*/
+.primary_text{
+    color: orange;
+}
+.btn{
+    display: inline-block;
+    padding:15px 30px ;
+    border: none;
+    border-radius: 15px;
+}
+.btn_primary{
+    color: white;
+    border:1px solid white;
+    transition: 0.3s;
+
+}
+.btn_primary:hover{
+
+    background: orange;
+    transform: scale(1.1);
+}
+.btn_secondary{
+color:white;
+background-color:rgb(27, 4, 49);
+transition: 0.3s;
+}
+.btn_secondary:hover{
+     transform: scale(1.1);
+    background-color:orange;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+}
+.container{
+    
+    max-width: 1100px;
+    margin: auto;
+    
+}
+header{
+    height: 100vh;
+    background: url(./img/home_bg.jpeg) center  /cover no-repeat;
+    position: relative;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+    
+}
+#navbar ul li a:hover{
+    
+    background-color: orange;
+    border-radius:7px ;
+    transform: scale(1.1);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 75vh;
+}
+header .content h1{
+    font-size: 40px;
+    color: white;
+}
+header .content p{
+    margin: 20px 0px 40px ;
+    color: white;
+    font-weight: 400;
+    
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0,0.6);
+
+}
+header *{z-index: 10;
+
+}
+
+
+/*header end*/
+
+/*about start*/
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+
+}
+#about .title{
+    text-align: center;
+    margin-bottom: 60px;
+
+
+}
+
+#about img{
+    width: 400px;
+    margin-left: 10px
+    
+
+}
+
+#about section{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+
+
+    
+      
+}
+#about .about_content p{ 
+    width: 60vh;
+    margin-bottom: 40px;
+    color: rgb(68, 67, 67);
+    font-weight: 500;
+    line-height: 1.6;
+    
+}
+
+#about h2 , #offers h2{
+    font-size:40px ;
+    color: rgb(46, 5, 85);
+    margin-bottom: 20px;
+
+}
+#about .title p , #offers .title p
+{
+    font-size: 18px;
+    color: rgb(40, 4, 73);
+    font-weight: 600;
+    
+}
+
+
+
+
+
+/*about end*/
+/*offers start*/
+#offers{
+    display: flex;
+    justify-content: center;
+    background: url(./img/offer-background.jpg) center center/cover fixed;
+    height: 70vh;
+}
+#offers .title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+#offers h2{
+    color: yellow;
+}
+#offers .title p{
+    color: white;
+    font-weight: 500;
+}
+#offers .offers_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}   
+
+#offers .offers_items img{
+    width: 200px;
+}
+#offers .offers_items h3{
+    font-size: 25px;
+    margin: 25px 0px;
+}
+#offers .offers_items p {
+    font-size: 14px;
+    padding: 0px 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+}
+#offers .offers_items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+
+
+/*offers end*/
+
+
+/*MENU start*/
+#menu {
+    background: white;
+    padding: 80px 0px ;
+}
+#menu .title{
+text-align: center;
+margin-bottom: 80px;
+color: rgb(20, 1, 37);
+}
+
+#menu h2{
+  font-size:40px ;  
+  margin-bottom: 20px;
+}
+#menu .menu_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+#menu img{
+    width:80px ;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+#menu .menu_item div{
+    width: 100%;
+}
+
+
+#menu .menu_items .menu_item{
+    
+    display: flex;
+    align-items: center;
+    
+    margin: 40px 0;
+    
+}
+
+
+
+#menu h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(33, 3, 61);
+    
+}
+#menu  span{
+    color: orange;
+    min-width: 150px;
+    text-align: right;
+}
+#menu button{
+    background: orange;
+    color: white;
+    display: block;
+    margin:20px auto 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#menu button:hover{
+    background-color:rgb(32, 1, 32) ;
+    transform:scale(1.1) ;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+}
+
+
+/*menu end*/
+
+
+/*day time start*/
+#daytime {
+    background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+    color: white;
+    text-align: center;
+}
+
+#daytime .daytime_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+}
+
+.daytime_items .daytime_item{
+    margin: 0 80px 0 80px;
+}
+.daytime_item h3{
+
+    font-size:30px ;
+    font-weight: 100px;
+    margin: 20px 0 10px;
+}
+
+.daytime_item p{
+    color: rgb(54, 2, 54);
+    font-weight: 200px;
+}
+
+
+
+
+/*day time end*/
+
+/*gallary start*/
+#gallery {
+background: url(./img/offer-background.jpg) center center/cover no-repeat ;
+padding:8rem 0 6rem ;
+}
+#gallery img{
+
+    width: 280px;
+    height:200px;
+    border-radius: 15px;
+    margin: 20px;
+    transition: 0.5s;   
+    
+}
+#gallery .img_gallery{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+#gallery h2{
+ font-size: 40px;
+ margin-bottom: 20px;
+ text-align: center;
+ color: yellow;
+ margin:  10px 0 80px;
+ 
+}
+
+#gallery img:hover{
+
+transform: scale(1.1);
+box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+}
+
+
+/*gallary end*/
+
+/*contact start*/
+
+#contact{
+    
+    background: rgb(197, 195, 195);
+
+
+}
+#contact .contact_content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+#contact .contact_info{
+
+    width: 50%;
+}
+.contact_info div{
+  margin: 30px 0;
+
+}
+
+.contact h3{
+ font-size: 20px;
+ color: rgb(24, 1, 46);
+ margin-bottom: 10px;
+
+}
+.contact_info p{
+margin-top: 5px;
+    color: rgb(34, 33, 33);
+}
+
+.contact_info i{
+
+    color: yellow;
+    margin-right: 10px;
+}
+.contact_info a i {
+    color: black;
+    padding: 15px;
+    
+    border-radius: 50%;
+    font-size: 35px;
+    transition: 0.3s;
+    
+}
+.contact_info a i:hover{
+
+
+color: yellow;
+transform: scale(1.1);
+
+}
+
+form{
+    width: 50%;
+}
+form input , textarea{
+
+    display: block;
+    width: 300px;
+    padding: 20px 15px;
+    margin: 10px 0 ;
+    border:rgb(68, 67, 67);
+    background: rgb(167, 165, 165);
+    border-radius: 10px;
+
+}
+#contact button{
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    background: rgb(179, 179, 3);
+    color: white;
+transition: 0.3s;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+#contact button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    background-color: rgb(94, 95, 95);
+}
+
+/*contact end*/
+
+/*footer start*/
+footer{
+    background-color: rgb(28, 3, 53);
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+    
+}
+
+footer a{
+ color:yellow ;
+ transition: 0.3s;
+
+}
+footer a:hover{
+
+    color: rgb(46, 46, 252);
+    transform: scale(1.1);
+}
+/*footer end*/
